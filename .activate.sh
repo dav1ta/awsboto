@@ -1,0 +1,1 @@
+/home/davit/Desktop/env/bin/activate
