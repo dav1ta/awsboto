@@ -1,0 +1,18 @@
+[
+  {
+    "bucket_name": "imageprocessorbucket21",
+    "event_name": "UploadEvent",
+    "function_name": "imageprocessor",
+    "role": "LabRole",
+    "handler": "lambda_handler",
+    "function_file": "lambda_func.py"
+  },
+  {
+    "bucket_name": "imageprocessorbucket31",
+    "event_name": "UploadEventV2",
+    "function_name": "preprocessor",
+    "role": "LabRole",
+    "handler": "lambda_handler",
+    "function_file": "lambda_func.py"
+  }
+]
