@@ -24,7 +24,7 @@ def create_routing_table(client, vpc_id):
 
 def main():
     parser = init_argparse()
-    client = boto3.client('ec3', region='us-east-1')
+    client = boto3.client('ec2', region_name='us-east-1')
     create_routing_table(client, parser.vpc)
 
 

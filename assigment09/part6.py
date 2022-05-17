@@ -19,7 +19,7 @@ def attach_subnet_to_routing_table(client, subnet_id, rtb_id):
 
 def main():
     parser = init_argparse()
-    client = boto3.client('ec3', region='us-east-1')
+    client = boto3.client('ec2', region_name='us-east-1')
     attach_subnet_to_routing_table(client, parser.sub, parser.route)
 
 
